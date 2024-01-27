@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500&family=Exo+2:wght@600;700;800&display=swap");
+
+* {
+  @apply font-alegreya;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  @apply font-exo;
+}
+
+.section {
+  @apply max-w-[1380px] mx-auto px-2.5 md:px-5 lg:px-10;
+}

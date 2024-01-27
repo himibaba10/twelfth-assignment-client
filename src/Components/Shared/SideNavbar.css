@@ -1,0 +1,3 @@
+.side-navbar .active {
+  @apply !bg-primary rounded-sm py-3;
+}
