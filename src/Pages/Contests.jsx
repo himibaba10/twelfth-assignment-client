@@ -21,7 +21,7 @@ const Contests = () => {
 
   return (
     <section className="section">
-      <div className="text-white p-7 sm:px-12 sm:py-16 rounded-2xl bg-gradient-to-tr from-primary to-secondary mb-20">
+      <div className="text-white p-7 sm:px-12 sm:py-16 rounded-2xl bg-gradient-to-tr from-primary to-secondary mb-10 md:mb-20">
         <h3 className="text-4xl sm:text-5xl mb-5 font-bold text-center">
           All Contests
         </h3>
@@ -30,10 +30,13 @@ const Contests = () => {
           ready to see you as a champion!
         </p>
       </div>
-      <div role="tablist" className="tabs tabs-boxed w-max mx-auto mb-10">
+      <div
+        role="tablist"
+        className="tabs tabs-boxed w-full md:w-max mx-auto mb-10 flex flex-col sm:grid"
+      >
         <a
           role="tab"
-          className={`tab text-lg h-10 ${
+          className={`w-full md:w-auto tab text-lg h-10 ${
             currentContests === "All" && "tab-active"
           }`}
           onClick={() => setCurrentContests("All")}
@@ -42,7 +45,7 @@ const Contests = () => {
         </a>
         <a
           role="tab"
-          className={`tab text-lg h-10 ${
+          className={`w-full md:w-auto tab text-lg h-10 ${
             currentContests === "Business Contest" && "tab-active"
           }`}
           onClick={() => setCurrentContests("Business Contest")}
@@ -51,7 +54,7 @@ const Contests = () => {
         </a>
         <a
           role="tab"
-          className={`tab text-lg h-10 ${
+          className={`w-full md:w-auto tab text-lg h-10 ${
             currentContests === "Medical Contest" && "tab-active"
           }`}
           onClick={() => setCurrentContests("Medical Contest")}
@@ -60,7 +63,7 @@ const Contests = () => {
         </a>
         <a
           role="tab"
-          className={`tab text-lg h-10 ${
+          className={`w-full md:w-auto tab text-lg h-10 ${
             currentContests === "Article Writing" && "tab-active"
           }`}
           onClick={() => setCurrentContests("Article Writing")}
@@ -69,7 +72,7 @@ const Contests = () => {
         </a>
         <a
           role="tab"
-          className={`tab text-lg h-10 ${
+          className={`w-full md:w-auto tab text-lg h-10 ${
             currentContests === "Gaming" && "tab-active"
           }`}
           onClick={() => setCurrentContests("Gaming")}

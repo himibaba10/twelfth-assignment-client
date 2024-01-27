@@ -56,7 +56,7 @@ const Header = () => {
 
   return (
     <div className="navbar section">
-      <div className="navbar-start">
+      <div className="navbar-start w-full lg:w-1/2 flex-row-reverse justify-between">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -76,14 +76,14 @@ const Header = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 right-0"
           >
             {navItems}
           </ul>
         </div>
         <img className="w-20 md:w-24" src={logo} alt="" />
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end w-0 lg:w-1/2">
         <ul className="menu menu-horizontal px-1 hidden lg:flex items-center">
           {navItems}
         </ul>

@@ -33,12 +33,15 @@ const SearchPage = () => {
 
   return (
     <>
-      <section className="py-10 min-h-0 md:min-h-[350px] flex  items-center bg-gradient-to-tr from-primary to-secondary text-white mb-20">
+      <section className="py-10 min-h-0 md:min-h-[350px] flex  items-center bg-gradient-to-tr from-primary to-secondary text-white mb-10 md:mb-20">
         <div className="section w-full flex flex-col justify-between gap-7 items-center">
           <h1 className="text-4xl md:text-6xl font-bold text-center">
             Search Below
           </h1>
-          <form className="relative w-[400px]" onSubmit={handleSearch}>
+          <form
+            className="relative w-full sm:w-[400px]"
+            onSubmit={handleSearch}
+          >
             <input
               name="search"
               type="text"

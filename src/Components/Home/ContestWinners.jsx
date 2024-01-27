@@ -7,6 +7,9 @@ const ContestWinners = () => {
   return (
     <section className="section bg-center py-0 md:py-20 bg-fixed">
       <div
+        data-aos="flip-up"
+        data-aos-duration="1000"
+        data-aos-delay="200"
         className="text-white p-7 sm:px-12 sm:py-16 rounded-2xl bg-no-repeat bg-cover bg-center"
         style={{
           backgroundImage: `linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(${programmingImg})`,
@@ -42,7 +45,12 @@ const ContestWinners = () => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row gap-10 mt-10">
-        <div className="card shadow-xl w-full md:w-1/2 flex-row gap-5 p-7 bg-gradient-to-tr from-primary to-secondary text-white">
+        <div
+          data-aos="flip-right"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+          className="card shadow-xl w-full md:w-1/2 flex-row gap-5 p-7 bg-gradient-to-tr from-primary to-secondary text-white"
+        >
           <div>
             <IoRocketOutline size={40} className="mt-1" />
           </div>
@@ -58,7 +66,12 @@ const ContestWinners = () => {
             </button>
           </div>
         </div>
-        <div className="card shadow-xl w-full md:w-1/2 flex-row gap-5 p-7 border-4 border-secondary">
+        <div
+          data-aos="flip-left"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+          className="card shadow-xl w-full md:w-1/2 flex-row gap-5 p-7 border-4 border-secondary"
+        >
           <div>
             <IoTrophyOutline size={40} className="mt-1 text-primary" />
           </div>

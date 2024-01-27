@@ -51,7 +51,7 @@ const PopularContest = () => {
           }}
           className="popular-contest-pagination !pb-14 mt-8 md:mt-16"
         >
-          {popularContests.map((contest) => (
+          {popularContests?.map((contest) => (
             <SwiperSlide key={contest._id}>
               <div className="card flex-col sm:flex-row shadow-lg overflow-hidden">
                 <figure className="rounded-none">
