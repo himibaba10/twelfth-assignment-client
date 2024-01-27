@@ -57,14 +57,18 @@ const RegisteredContests = () => {
         <h1 className="w-full text-center text-3xl sm:text-5xl font-bold font-exo mb-5">
           My Registered Contests
         </h1>
-        <div className="text-center mb-10">
-          <button
-            onClick={() => setSort(!sort)}
-            className="btn bg-primary hover:bg-secondary text-white text-lg font-medium"
-          >
-            Sort by Date
-          </button>
-        </div>
+        {contests?.length ? (
+          <div className="text-center mb-10">
+            <button
+              onClick={() => setSort(!sort)}
+              className="btn bg-primary hover:bg-secondary text-white text-lg font-medium"
+            >
+              Sort by Date
+            </button>
+          </div>
+        ) : (
+          <></>
+        )}
         {isLoading ? (
           <Loader />
         ) : contests?.length ? (

@@ -54,9 +54,9 @@ const Profile = () => {
 
   return (
     <div className="py-10 px-2.5 bg-gradient-to-tr from-primary to-secondary min-h-screen flex items-center">
-      <div className="w-full flex justify-center items-center section gap-10">
-        <div className="w-1/2">
-          <div className="bg-white p-5 sm:p-10 max-w-lg">
+      <div className="w-full flex flex-col md:flex-row justify-center items-center section gap-10">
+        <div className="w-full md:w-1/2">
+          <div className="bg-white p-5 sm:p-10 max-w-none md:max-w-lg">
             <form onSubmit={handleSubmit(handleChangeUser)}>
               <h1 className="text-center text-3xl sm:text-5xl font-bold font-exo mb-7">
                 Change Your Info
@@ -85,11 +85,11 @@ const Profile = () => {
             </form>
           </div>
         </div>
-        <div className="w-1/2 bg-white p-10">
+        <div className="w-full md:w-1/2 bg-white p-2 md:p-10">
           {contests?.length ? (
             <>
               <h2 className="text-3xl text-center font-bold">Your Winning</h2>
-              <PieChart width={350} height={280} className="mx-auto">
+              <PieChart width={250} height={280} className="mx-auto">
                 <Pie
                   data={data01}
                   dataKey="value"
@@ -110,7 +110,9 @@ const Profile = () => {
               </p>
             </>
           ) : (
-            <h2>You did not participate any contest</h2>
+            <h2 className="text-2xl text-center">
+              You did not participate any contest
+            </h2>
           )}
         </div>
       </div>
